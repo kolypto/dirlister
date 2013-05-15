@@ -1,0 +1,47 @@
+# ===[ APP ]=== #
+app/data/*
+!app/data/.gitkeep
+
+app/config/*.php
+!app/config/*.php-dist
+
+files/
+
+# ===[ FRAMEWORK ]=== #
+
+# ===[ OTHER ]=== #
+# IDE Projects
+.idea
+.nbproject
+.project
+nbproject
+project
+*.sublime-project
+
+# Generic
+*~
+*.tmp
+*.bak
+*.swp
+*.kate-swp
+*.lock
+*.DS_Store
+Thumbs.db
+
+# Generic: Utils
+.sass-cache/
+code_coverage
+coverage
+.coverage
+
+# Archives
+/*.zip
+/*.7z
+/*.rar
+/*.gz
+/*.tgz
+/*.bz2
+/*.tbz2
+
+# Other
+/*.sql
