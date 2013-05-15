@@ -1,0 +1,17 @@
+<?php
+return array(
+    'files' => array(
+        'path' => 'files/', # path to files source
+        'web' => '/files/', # HTTP prefix to real files
+        'meta' => 'files/.meta.ini', # metadata file
+    ),
+    'listing' => array(
+        'auth' => array( # Password-protection for the directory listing
+            'realm' => 'My Files',
+            'users' => array(
+                # Login => Password pairs
+                'user' => 'pw',
+            ),
+        ),
+    ),
+);
