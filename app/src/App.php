@@ -80,6 +80,13 @@ class App {
                 $url = rtrim($this->config->files['web'], '\\/').'/'.$path;
 
                 $meta = isset($metaFile[$path])? $metaFile[$path] : null;
+                
+                # Ignore?
+                $ign = $this->config->listing['ignore'];
+                if (!empty($ign['name']) && preg_match($ign['name'], $name)) continue;
+                if (!empty($ign['path']) && preg_match($ign['path'], $path)) continue;
+                
+                # Display
 
                 $obj = (object)array(
                     'is_dir' => $is_dir,

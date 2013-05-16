@@ -14,5 +14,10 @@ return array(
                 'user' => 'pw',
             ),
         ),
+        # regexps to ignore files
+        'ignore' => array(
+            'name' => '~^\.|\.ini$~S',
+            'path' => null,
+        ),
     ),
 );
