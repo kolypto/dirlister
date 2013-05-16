@@ -1,8 +1,8 @@
 <table>
     <thead><tr>
         <th>Name</th>
-        <th>Time</th>
         <th>Size</th>
+        <th>Time</th>
     </tr></thead>
     <tbody>
 
