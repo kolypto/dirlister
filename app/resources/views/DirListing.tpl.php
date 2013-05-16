@@ -1,4 +1,10 @@
 <table>
+    <caption>
+        <a href="/">root: </a>
+        <?php foreach ($path=explode('/',trim($currentPath,'/')) as $i => $d): ?>
+            / <a href="<?=str_repeat('../', count($path)-$i-1);?>"><?= htmlspecialchars($d); ?></a>
+        <?php endforeach; ?>
+    </caption>
     <thead><tr>
         <th>Name</th>
         <th>Size</th>

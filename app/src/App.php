@@ -110,6 +110,7 @@ class App {
         return $renderer->render(array(
             'path' => $listPath,
             'files' => array_merge($dirs, $files),
+            'currentPath' => $listPath,
         ));
     }
 }
